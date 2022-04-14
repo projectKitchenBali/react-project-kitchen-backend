@@ -13,6 +13,8 @@ services:
     volumes:
       - mongo-data:/data/db
     restart: always
+    ports: 
+      - "27017"
 volumes:
   mongo-data:
     driver: local
